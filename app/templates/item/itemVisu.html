@@ -1,0 +1,105 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		{% csrf_token %}
+		<link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+		<title>{{item.nome}}</title>
+	</head>
+	<body>
+		<div id="corpo">
+		<div id="bloco">
+			<iframe class="topo" src="/login/"></iframe>
+			<br><br>
+
+			<iframe class="topomenu" src="/menu/"></iframe>
+
+			<div class="busca">
+				<form method="GET" action="/buscar/">
+					{{ form.Buscar }}
+					<input class="botao" type="submit" value=""/>
+				</form>
+			</div>
+			<br>
+			<div id="layplt">
+				<ul>
+					<h1>Plataformas</h1>
+				{% for obj in plt %}
+					<li><a href="{{obj.pagina}}">
+						{{obj.nome_plataforma}}<br>
+						<img src="{{obj.imagem.url}}" width="250" height="100"></a>
+					</li>
+				{% endfor %}
+				</ul>
+			</div>	
+		<div id="visu">
+		<div class="stm">
+			<table class="stm">
+				<tr>
+					<td id="ntm">
+					{{item.nome}}
+					</td>
+					<td id="ttm">
+					{{item.nome_plataforma}}
+					</td>
+				</tr>
+			</table>
+			<div id="it">
+				<img src="{{item.imagem.url}}"><br>
+				<p id='status'><br>
+				<span id="vis">R${{item.preco}}<br>
+				{% if item.qtd %}
+				Disponível em Estoque
+				{% else %}
+				Esgotado
+				{% endif %}</span><br><br><div id="savbt">
+				{% if e == 'Guardar' %}
+				<a id="sav" href="{% url 'item:hist' item.id %}">Guardar</a>
+				{% else %}
+				<p class="st">Guardado</p>
+				{% endif %}</div>
+			</div>
+		</div>
+		</div>
+
+		<div id="veja">
+			<h1>Veja Tambem</h1>
+			{% for n in itm %}
+			<div id="layoutveja">
+		   		<table class="tblistvisu">
+		         	<tr class="tbupline">
+		       			<div class="tbnomevisu">
+		           			<a href="{% url 'item:itmvisu' n.id %}">
+		       				{{n.nome}}
+		   					</a></div>
+						<div class="tbnomeplt">
+		       			{{n.nome_plataforma}}
+		   				</div>
+					</tr>
+					<tr>
+			        	<td class="tbimg">
+               				<img src="{{n.imagem.url}}" width="143" height="201">
+						</td>
+						<td class="tbinfo">
+			            	<p>R${{n.preco}}<br><br>
+		           			{% if n.qtd %}
+		           			Disponível em Estoque
+		           			{% else %}
+		           			Esgotado</p>
+		           			{% endif %}
+		           			<br><br>
+		           			<a href="{% url 'item:itmvisu' n.id %}">
+		       				<img id="cart" src="/imagens/cart.png/">
+		   					</a>
+           				</td>
+           			</tr>	
+	 			</table><br>
+	    	</div>
+	    	{% endfor %}
+		</div>
+		<br><br><br><br><br><br>
+		<iframe class="roda" src="/rod/"></iframe>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>Portfolio</Name>
+    <RootNamespace>Portfolio</RootNamespace>
+    <InterpreterId>{fe8d230e-be2f-4f64-8afd-b174eeb0c0c1}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>teste47</NameOfLastUsedPublishProfile>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>30f02aec-6692-4029-b4d5-456ee9838c80</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\admin.py" />
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\migrations\0001_initial.py" />
+    <Compile Include="app\migrations\0002_auto_20151006_2100.py" />
+    <Compile Include="app\migrations\0003_auto_20151006_2127.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="Portfolio\__init__.py" />
+    <Compile Include="Portfolio\settings.py" />
+    <Compile Include="Portfolio\urls.py" />
+    <Compile Include="Portfolio\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\migrations\__pycache__\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\item\" />
+    <Folder Include="app\static\item\_css\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="app\templates\item\" />
+    <Folder Include="app\templates\item\imagens\" />
+    <Folder Include="app\templates\item\imagens\item\" />
+    <Folder Include="app\templates\item\imagens\plataforma\" />
+    <Folder Include="app\__pycache__\" />
+    <Folder Include="Portfolio\" />
+    <Folder Include="Portfolio\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="teste47.pubxml" />
+    <None Include="teste447.pubxml" />
+    <None Include="teste774.pubxml" />
+    <None Include="portfoliogamestore.pubxml" />
+    <None Include="portfoliogamestore %282%29.pubxml" />
+    <None Include="portfoliogamestorage.pubxml" />
+    <Content Include="app\migrations\__pycache__\0001_initial.cpython-34.pyc" />
+    <Content Include="app\migrations\__pycache__\0002_auto_20151006_2100.cpython-34.pyc" />
+    <Content Include="app\migrations\__pycache__\0003_auto_20151006_2127.cpython-34.pyc" />
+    <Content Include="app\migrations\__pycache__\__init__.cpython-34.pyc" />
+    <Content Include="app\static\item\_css\batman.jpg" />
+    <Content Include="app\static\item\_css\search.png" />
+    <Content Include="app\static\item\_css\style.css" />
+    <Content Include="app\templates\item\ban.html" />
+    <Content Include="app\templates\item\buscar.html" />
+    <Content Include="app\templates\item\cadastro.html" />
+    <Content Include="app\templates\item\cadastro2.html" />
+    <Content Include="app\templates\item\contato.html" />
+    <Content Include="app\templates\item\contato2.html" />
+    <Content Include="app\templates\item\guardados.html" />
+    <Content Include="app\templates\item\hist.html" />
+    <Content Include="app\templates\item\imagens\cart.png" />
+    <Content Include="app\templates\item\imagens\item\Alice_Madness_Returns.png" />
+    <Content Include="app\templates\item\imagens\item\ARMY_OF_TWO.jpg" />
+    <Content Include="app\templates\item\imagens\item\Bakugan-BB.png" />
+    <Content Include="app\templates\item\imagens\item\Batman_Arkham-Origins.png" />
+    <Content Include="app\templates\item\imagens\item\castlevania_los_divcapa.jpg" />
+    <Content Include="app\templates\item\imagens\item\COD-MW.jpg" />
+    <Content Include="app\templates\item\imagens\item\CONDEMNED_2.jpg" />
+    <Content Include="app\templates\item\imagens\item\Demon_Souls.jpg" />
+    <Content Include="app\templates\item\imagens\item\Devil_May_Cry-HDColl.png" />
+    <Content Include="app\templates\item\imagens\item\GUITAR-HERO_WT.jpg" />
+    <Content Include="app\templates\item\imagens\item\JERICHO.jpg" />
+    <Content Include="app\templates\item\imagens\item\Left4Dead.png" />
+    <Content Include="app\templates\item\imagens\item\Mortal_Kombat.png" />
+    <Content Include="app\templates\item\imagens\item\Naruto_SR.png" />
+    <Content Include="app\templates\item\imagens\item\Nascar_14.png" />
+    <Content Include="app\templates\item\imagens\item\NINJA-GAIDEN_2.jpg" />
+    <Content Include="app\templates\item\imagens\item\Real_Steel.png" />
+    <Content Include="app\templates\item\imagens\item\RED-DEAD-R.jpg" />
+    <Content Include="app\templates\item\imagens\item\Resident_evil-6.jpg" />
+    <Content Include="app\templates\item\imagens\item\Tekken_6.png" />
+    <Content Include="app\templates\item\imagens\item\Terminator_Salvation.png" />
+    <Content Include="app\templates\item\imagens\plataforma\PS3.jpg" />
+    <Content Include="app\templates\item\imagens\plataforma\PS3_YAwFrAz.jpg" />
+    <Content Include="app\templates\item\imagens\plataforma\Xbox360.png" />
+    <Content Include="app\templates\item\imagens\plataforma\Xbox360_dtGG7XM.png" />
+    <Content Include="app\templates\item\imagens\plataforma\Xbox360_glNGKHj.png" />
+    <Content Include="app\templates\item\index.html" />
+    <Content Include="app\templates\item\itemVisu.html" />
+    <Content Include="app\templates\item\logado.html" />
+    <Content Include="app\templates\item\login.html" />
+    <Content Include="app\templates\item\logout.html" />
+    <Content Include="app\templates\item\menu.html" />
+    <Content Include="app\templates\item\ncadastro.html" />
+    <Content Include="app\templates\item\ncadastro2.html" />
+    <Content Include="app\templates\item\PS3Itens.html" />
+    <Content Include="app\templates\item\rod.html" />
+    <Content Include="app\templates\item\Xbox360Itens.html" />
+    <Content Include="app\__pycache__\admin.cpython-34.pyc" />
+    <Content Include="app\__pycache__\forms.cpython-34.pyc" />
+    <Content Include="app\__pycache__\models.cpython-34.pyc" />
+    <Content Include="app\__pycache__\urls.cpython-34.pyc" />
+    <Content Include="app\__pycache__\views.cpython-34.pyc" />
+    <Content Include="app\__pycache__\__init__.cpython-34.pyc" />
+    <None Include="portfoliogamestore %283%29.pubxml" />
+    <Content Include="Portfolio\__pycache__\settings.cpython-34.pyc" />
+    <Content Include="Portfolio\__pycache__\urls.cpython-34.pyc" />
+    <Content Include="Portfolio\__pycache__\wsgi.cpython-34.pyc" />
+    <Content Include="Portfolio\__pycache__\__init__.cpython-34.pyc" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.mht">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="django-1.8\">
+      <Id>{fe8d230e-be2f-4f64-8afd-b174eeb0c0c1}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>django-1.8 (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

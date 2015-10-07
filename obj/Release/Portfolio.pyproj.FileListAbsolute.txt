@@ -1,0 +1,9 @@
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\AzureSetup.cfg
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\bin\wfastcgi.py
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\obj\Release\deployment-updated-orig-prefix.txt
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\ptvs_virtualenv_proxy.py
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\obj\Release\web.config
+C:\Users\Aldo\Documents\Visual Studio 2015\Projects\Portfolio\Portfolio\obj\Release\web.debug.config

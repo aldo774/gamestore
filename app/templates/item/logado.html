@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+		<title>Logado</title>
+	</head>
+	<body>
+		<p id="logado">		
+		Ola {{request.user}}
+		<a href="/logout/">Logout</a>
+		</p>
+	</body>
+</html>

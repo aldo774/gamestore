@@ -1,0 +1,93 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+     <head>
+          {% csrf_token %}
+          <link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+          <title>Cadastro PF</title>
+     </head>
+     <body>
+          <div id="corpo">
+          <div id="bloco">
+               <iframe class="topo" src="/login/"></iframe>
+               <br><br>
+
+               <iframe class="topomenu" src="/menu/"></iframe>
+
+               <div class="busca">
+                    <form method="GET" action="/buscar/">
+                         {{ f.Buscar }}
+                         <input class="botao" type="submit" value=""/>
+                    </form>
+               </div>
+               <br>
+               <div id="layplt">
+                    <ul>
+                         <h1>Plataformas</h1>
+                    {% for obj in plt %}
+                         <li><a href="{{obj.pagina}}">
+                              {{obj.nome_plataforma}}<br>
+                              <img src="{{obj.imagem.url}}" width="250" height="100"></a>
+                         </li>
+                    {% endfor %}
+                    </ul>
+               </div>    
+               
+               <div class="cad2">
+                    <h1>Cadastro de Pessoa Física</h1>
+                    <form id="cad" method="POST" action="/ncadastro/">
+                    {% csrf_token %}
+                    <table class="cad">
+                    {% for o in form %}
+                         <tr class="cad">
+                         <td class="cad">{{ o.label }}</td>
+                                   <td class="cad2">{{ o }}</td></tr>
+                    {% endfor %}<br>
+                         <tr><td><input type="submit" value="Cadastrar"></td></tr>
+                    </table>
+                    <br>
+                    </form>
+               </div>
+
+               <div id="veja">
+                    <h1>Veja Tambem</h1>
+                    {% for n in dest %}
+                    <div id="layoutveja">
+                         <table class="tblistvisu">
+                         <tr class="tbupline">
+                                   <div class="tbnomevisu">
+                                        <a href="{% url 'item:itmvisu' n.id %}">
+                                        {{n.nome}}
+                                        </a></div>
+                                   <div class="tbnomeplt">
+                                   {{n.nome_plataforma}}
+                                   </div>
+                              </tr>
+                              <tr>
+                              <td class="tbimg">
+                                        <img src="{{n.imagem.url}}" width="143" height="201">
+                                   </td>
+                                   <td class="tbinfo">
+                                   <p>R${{n.preco}}<br><br>
+                                        {% if n.qtd %}
+                                        Disponível em Estoque
+                                        {% else %}
+                                        Esgotado</p>
+                                        {% endif %}
+                                        <br><br>
+                                        <a href="{% url 'item:itmvisu' n.id %}">
+                                        <img id="cart" src="/imagens/cart.png/">
+                                        </a>
+                                   </td>
+                              </tr>     
+                         </table><br>
+               </div>
+               {% endfor %}
+               </div>
+          
+          <br><br><br><br><br><br>
+          <iframe class="roda" src="/rod/"></iframe>
+          </div>
+          </div>
+     </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+		<title>Login Usuário</title>
+	</head>
+	<body>
+		<div id="cadlogin">
+			<form name="form1" method="POST" action="/login/">
+				{% csrf_token %}
+				<div class="cadlog">
+					<label>Email:
+						<input type="text" name="email" id="email">
+					</label><br>
+				</div>
+				<div class="cadlog">
+					<label>Senha:
+						<input type="password" name="senha" id="senha">
+					</label><br>
+				</div>
+				<div class="cadlogsubm">
+					<input type="submit" name="button" id="button" value="Entrar">
+				<br>
+				</div>
+			</form>
+		<a href="/cadastro/" target="_parent">Cadastrar</a>
+		<a href="/cadastro2/" target="_parent">Cadastrar PJ</a>
+		</div>
+	</body>
+</html>

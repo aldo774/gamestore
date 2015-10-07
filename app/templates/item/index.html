@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		{% csrf_token %}
+		<link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+		<title>Inicio</title>
+	</head>
+	<body>
+		<div id="corpo">
+		<div id="bloco">
+			<iframe class="topo" src="/login/"></iframe>
+			<br><br>
+
+			<iframe class="topomenu" src="/menu/"></iframe>
+
+			<div class="busca">
+				<form method="GET" action="/buscar/">
+					{{ form.Buscar }}
+					<input class="botao" type="submit" value=""/>
+				</form>
+			</div>
+			<br>
+			<div id="layplt">
+				<ul>
+					<h1>Plataformas</h1>
+				{% for obj in plt %}
+					<li><a href="{{obj.pagina}}">
+						{{obj.nome_plataforma}}<br>
+						<img src="{{obj.imagem.url}}" width="250" height="100"></a>
+					</li>
+				{% endfor %}
+				</ul>
+			</div>	
+			<div id="layitm">
+				<div class="blayout">
+					<h1>Destaques</h1>
+					{% for n in dest %}
+					<div class="layout">
+			    		<table class="tblistvisu">
+				         	<tr class="tbupline">
+			        			<div class="tbnomevisu">
+				           			<a href="{% url 'item:itmvisu' n.id %}">
+		            				{{n.nome}}
+		        					</a></div>
+		      					<div class="tbnomeplt">
+		            			{{n.nome_plataforma}}
+		           				</div>
+		  					</tr>
+		 					<tr>
+					        	<td class="tbimg">
+                    				<img src="{{n.imagem.url}}" width="143" height="201">
+		    					</td>
+		     					<td class="tbinfo">
+					            	<p>R${{n.preco}}<br><br>
+		                			{% if n.qtd %}
+		                			Disponível em Estoque
+		                			{% else %}
+		                			Esgotado</p>
+		                			{% endif %}
+		                			<br><br>
+		                			<a href="{% url 'item:itmvisu' n.id %}">
+		            				<img id="cart" src="/imagens/cart.png/">
+		        					</a>
+                 				</td>
+                 			</tr>	
+	 					</table><br>
+	        		</div>
+	        		{% endfor %}
+				</div>
+				<div class="blayout">
+					<h1>Novidades</h1>
+					{% for n in nov %}
+					<div class="layout">
+			    		<table class="tblistvisu">
+			         		<tr class="tbupline">
+			        			<div class="tbnomevisu">
+				           			<a href="{% url 'item:itmvisu' n.id %}">
+		            				{{n.nome}}
+		        					</a></div>
+		      					<div class="tbnomeplt">
+		            			{{n.nome_plataforma}}
+		           				</div>
+		  					</tr>
+		 					<tr>
+					        	<td class="tbimg">
+                    				<img src="{{n.imagem.url}}" width="143" height="201">
+		    					</td>
+		     					<td class="tbinfo">
+					            	<p>R${{n.preco}}<br><br>
+		                			{% if n.qtd %}
+		                			Disponível em Estoque
+		                			{% else %}
+		                			Esgotado</p>
+		                			{% endif %}
+		                			<br><br>
+		                			<a href="{% url 'item:itmvisu' n.id %}">
+		            				<img id="cart" src="/imagens/cart.png/">
+		        					</a>
+                 				</td>
+                 			</tr>	
+	 					</table><br>
+	        		</div>	
+	        		{% endfor %}
+				</div>
+			</div>
+		<br><br><br><br><br><br>
+		<iframe class="roda" src="/rod/"></iframe>
+		</div>
+		</div>
+	</body>
+</html>	

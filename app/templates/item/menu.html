@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% csrf_token %}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'item/_css/style.css' %}"/>
+	</head>
+	<body>
+		<ul class="menu">
+			<a href="/" target="_parent">
+			<li id="menu">Inicio</li></a>
+			<a href="/guardados/" target="_parent">
+			<li id="menu">Itens Guardados</li></a>
+			<a href="/contato/" target="_parent">
+			<li id="menu">Contato</li></a>
+		</ul>
+	</body>
+</html>
